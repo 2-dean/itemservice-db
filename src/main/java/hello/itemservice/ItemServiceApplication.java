@@ -10,7 +10,10 @@ import org.springframework.context.annotation.Profile;
 
 
 //@Import(MemoryConfig.class)// MemofyConfig를 설정파일로 사용한다
-@Import(MyBatisConfig.class)
+//@Import(JdbcTemplateV1Config.class)
+//@Import(JdbcTemplateV2Config.class)
+@Import(JdbcTemplateV3Config.class)
+//@Import(MyBatisConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")// 해당 패키지 하위만 컴포넌트를 스캔함
 public class ItemServiceApplication {
 
